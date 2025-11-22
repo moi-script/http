@@ -6,10 +6,10 @@
 import http from 'http';
 
 const requestObject = {
-    host : '',
+    host : 'localhost',
     port : 3000,
-    path : '/data',
-    method : 'GET'
+    path : '/data?abc=123&name=John',
+    method : 'POST'
 }
 
 const client = http.request(requestObject);
